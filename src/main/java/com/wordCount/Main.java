@@ -10,7 +10,6 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
-import org.apache.hadoop.util.Tool;
 
 public class Main /*extends Configured implements Tool*/ {
     public static void main(String[] args) throws Exception{
