@@ -1,4 +1,4 @@
-package com.logCount;
+package com.logCount.VO;
 
 import com.logCount.VO.LogVO;
 

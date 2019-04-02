@@ -1,7 +1,7 @@
 package com.logCount.MapReduce;
 
 import com.logCount.VO.LogVO;
-import com.logCount.VoUtils;
+import com.logCount.VO.VoUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
