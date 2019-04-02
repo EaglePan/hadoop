@@ -1,5 +1,7 @@
 package com.logCount;
 
+import com.logCount.MapReduce.LogMapper;
+import com.logCount.MapReduce.LogReducer;
 import com.wordCount.Main;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -26,7 +28,7 @@ public class MainThread {
 
         //src/main/resources/access_log.txt
         //src/main/resources/logCount
-        FileInputFormat.addInputPath(job,new Path("src/main/resources/access_log"));    //为job设置输入路径
+        FileInputFormat.addInputPath(job,new Path("src/main/resources/access_log.txt"));    //为job设置输入路径
         FileOutputFormat.setOutputPath(job, new Path("src/main/resources/logCount"));//为job设置输出路径
 
         System.exit(job.waitForCompletion(true) ?0 : 1);        //运行job

@@ -1,5 +1,7 @@
 package com.logCount;
 
+import com.logCount.VO.LogVO;
+
 import java.util.Arrays;
 import java.util.List;
 
