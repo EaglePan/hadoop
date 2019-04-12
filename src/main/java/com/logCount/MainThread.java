@@ -27,8 +27,8 @@ public class MainThread {
         job.setNumReduceTasks(2);
         job.setReducerClass(LogReducer.class);    //为job设置Reducer类
 
-        job.setOutputKeyClass(Text.class);        //为job的输出数据设置Key类
         job.setOutputValueClass(IntWritable.class);    //为job输出设置value类
+        job.setOutputKeyClass(Text.class);        //为job的输出数据设置Key类
         job.setOutputFormatClass(TextOutputFormat.class);
 
         //src/main/resources/access_log.txt

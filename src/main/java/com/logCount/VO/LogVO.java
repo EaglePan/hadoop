@@ -1,11 +1,7 @@
 package com.logCount.VO;
 
-import com.sun.jersey.api.ParamException;
-
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.Locale;
 
 public class LogVO {
@@ -30,13 +26,13 @@ public class LogVO {
         return this.time;
     }
 
-    public String getTimeDate(){
+    public String getTimeDate() {
         DateTimeFormatter standardDf =
                 DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss", Locale.CHINA);
         DateTimeFormatter inputDf =
-                DateTimeFormatter.ofPattern("dd/MMM/yyyy:HH:mm:ss",Locale.US);
+                DateTimeFormatter.ofPattern("dd/MMM/yyyy:HH:mm:ss", Locale.US);
 
-        LocalDateTime lt = LocalDateTime.parse(this.time,inputDf);
+        LocalDateTime lt = LocalDateTime.parse(this.time, inputDf);
         return standardDf.format(lt).toString();
 
 
@@ -57,7 +53,7 @@ public class LogVO {
     public void setTime(String time) {
        /* DateTimeFormatter inputDf =
                 DateTimeFormatter.ofPattern("dd/MMM/yyyy:HH:mm:ss");*/
-       if(time.indexOf("[")>-1) time=time.replace("[","");
+        if (time.indexOf("[") > -1) time = time.replace("[", "");
         this.time = time;
     }
 
@@ -66,7 +62,7 @@ public class LogVO {
     }
 
     public void setRequestType(String requestType) {
-        if(requestType.indexOf("\"")>-1) requestType=requestType.replace("\"","");
+        if (requestType.indexOf("\"") > -1) requestType = requestType.replace("\"", "");
         this.requestType = requestType;
     }
 
@@ -83,7 +79,7 @@ public class LogVO {
     }
 
     public void setProtocol(String protocol) {
-        if(protocol.indexOf("\"")>-1) protocol=protocol.replace("\"","");
+        if (protocol.indexOf("\"") > -1) protocol = protocol.replace("\"", "");
         this.protocol = protocol;
     }
 
@@ -108,7 +104,7 @@ public class LogVO {
     }
 
     public void setTimeZoom(String timeZoom) {
-        if(timeZoom.indexOf("]")>-1) timeZoom=timeZoom.replace("]","");
+        if (timeZoom.indexOf("]") > -1) timeZoom = timeZoom.replace("]", "");
         this.timeZoom = timeZoom;
     }
 
