@@ -18,6 +18,10 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
+/**
+ * 分区
+ */
+
 public class OrderByMainThread {
         public static void main(String[] args)  throws IOException, ClassNotFoundException, InterruptedException {
 
