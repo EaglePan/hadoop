@@ -1,6 +1,5 @@
 package com.logCountOrderBy;
 
-import com.logCount.MapReduce.LogMapper;
 import com.logCount.MapReduce.LogReducer;
 import com.logCountOrderBy.MapReduce.LogOrderMapper;
 import org.apache.hadoop.conf.Configuration;
